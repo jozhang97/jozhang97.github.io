@@ -1,0 +1,14 @@
+$ff: 'arial';
+$bg: #f2f2f2;
+body {
+	font-family: $ff;
+	background-color: $bg;
+}
+
+a:hover {
+	color: red;
+}
+ 
+a {
+ 	text-decoration: none;
+}
