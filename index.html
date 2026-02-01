@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Ouyang-Zhang - UT Austin</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141725431-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -9,268 +14,195 @@
         gtag('js', new Date());
         gtag('config', 'UA-141725431-1');
     </script>
-
-
-    <title> Jeffrey Ouyang-Zhang - UT Austin </title>
-    <link type="text/css" rel="stylesheet" href="http://s3.amazonaws.com/codeacademy-content/courses/ltp/css/bootstrap.css"/>
-    <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="/public/css/style.css"/>
 </head>
 <body>
-    <table border="0" width="980px" padding="10px">
-        <tbody>
-            <tr>
-                <td>
-                    <div style="margin-left: 10px">
-                        <img src="./assets/zhang.png" width="200" border="0"/>
+    <div class="container">
+        <header class="profile">
+            <img src="./assets/zhang.png" alt="Jeffrey Ouyang-Zhang" class="profile-photo">
+            <div class="profile-info">
+                <h1>Jeffrey Ouyang-Zhang</h1>
+                <p class="subtitle">PhD Student at UT Austin</p>
+                <p class="location">GDC 4.702B (4th floor, south wing)</p>
+                <p class="email">jozhang at utexas.edu</p>
+                <div class="profile-links">
+                    <a href="./files/Jeffrey_CV-260129.pdf">CV</a>
+                    <a href="https://scholar.google.com/citations?user=KyNwquYAAAAJ">Google Scholar</a>
+                    <a href="http://github.com/jozhang97/">Github</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="bio">
+            <p>I am a final year PhD student at The University of Texas at Austin, advised by Professor <a href="http://www.philkr.net/">Philipp Krähenbühl</a>.</p>
+            <p>I was previously a research assistant at UC Berkeley, working with Professors <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a> and <a href="https://cs.stanford.edu/~amirz/">Amir Zamir</a>. I graduated from UC Berkeley with a Bachelors of Science degree.</p>
+            <p>I am broadly interested in applying machine learning to biological applications.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Publications</h2>
+            <div class="publications">
+
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="./assets/pearl.png" alt="Pearl">
                     </div>
-                </td>
-                <td width="30"></td>
-                <td valign="top">
-                    <font size="6"> Jeffrey Ouyang-Zhang </font> <br>
-                    <font size="4"> PhD Student at UT Austin </font> <br> <br>
-                    <font size="4"> GDC 4.702B (4th floor, south wing) </font> <br> <br>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Pearl: A Foundation Model for Placing Every Atom in the Right Location</h3>
+                        <p class="publication-authors">Genesis Research: <span class="me">Jeffrey Ouyang-Zhang</span>, contributor</p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2510.24670">Paper</a>
+                        </div>
+                    </div>
+                </article>
 
-                    <font size="4"> jozhang at utexas.edu </font> <br>
-                    <font size="4"> <a href="./files/Jeffrey_CV-260129.pdf"> <u> [CV] </u> </a> </font>
-                    &nbsp;
-                    <font size="4"> <a href="https://scholar.google.com/citations?user=KyNwquYAAAAJ"> <u> [Google Scholar] </u> </a> </font>
-                    &nbsp;
-                    <font size="4"> <a href="http://github.com/jozhang97/"> <u> [Github] </u> </a> </font>
-                    <br>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="./assets/pairmixer.png" alt="PairMixer">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Triangle Multiplication is All You Need for Biomolecular Structure Representations</h3>
+                        <p class="publication-authors"><span class="me">Jeffrey Ouyang-Zhang</span>, Pranav Murugan, Daniel Jesus Diaz, Gianluca Scarpellini, Richard Strong Bowen, Nate Gruver, Adam Klivans, Philipp Kraehenbuehl, Aleksandra Faust, Maruan Al-Shedivat</p>
+                        <p class="publication-venue">ICLR 2026</p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2510.18870">Paper</a>
+                            <a href="https://github.com/genesistherapeutics/pairmixer">Code</a>
+                            <a href="https://huggingface.co/genesisml/pairmixer">Weights</a>
+                            <a href="./files/pairmixer_poster.pdf">Poster</a>
+                        </div>
+                    </div>
+                </article>
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="./assets/ambient.png" alt="Ambient Proteins">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Ambient Proteins: Training Diffusion Models on Low Quality Structures</h3>
+                        <p class="publication-authors">Giannis Daras*, <span class="me">Jeffrey Ouyang-Zhang</span>*, Krithika Ravishankar, William Daspit, Costis Daskalakis, Qiang Liu, Adam Klivans, Daniel J. Diaz</p>
+                        <p class="publication-venue">NeurIPS 2025 (Spotlight)</p>
+                        <div class="publication-links">
+                            <a href="https://www.biorxiv.org/content/10.1101/2025.07.03.663105v1">Paper</a>
+                            <a href="https://github.com/jozhang97/ambient-proteins">Code</a>
+                            <a href="https://huggingface.co/jozhang97/ambient-long">Weights</a>
+                            <a href="./files/ambient_poster.pdf">Poster</a>
+                        </div>
+                    </div>
+                </article>
 
-    <p style="width:980px; position: relative; left:20px"> 
-    I am a final year PhD student at The University of Texas at Austin, advised by Professor <a href="http://www.philkr.net/">Philipp Kr&auml;henb&uuml;hl</a>.
-    <br> <br>
-    I was previously a research assistant at UC Berkeley, working with Professors <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a> and <a href="https://cs.stanford.edu/~amirz/">Amir Zamir</a>.
-    I graduated from UC Berkeley with a Bachelors of Science degree.
-    <br> <br>
-    I am broadly interested in applying machine learning to biological applications.
-    </p>
-    <hr size="2" align="left" noshade>
-    <h2> Publications </h2>
-    <font face="helvetica, ariel, 'sans serif'">
-        <table cellspacing="15">
-            <tbody>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="./assets/ism.png" alt="ISM">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Distilling Structural Representations into Protein Sequence Models</h3>
+                        <p class="publication-authors"><span class="me">Jeffrey Ouyang-Zhang</span>, Chengyue Gong, Yue Zhao, Philipp Krähenbühl, Adam R Klivans, Daniel J Diaz</p>
+                        <p class="publication-venue">ICLR 2025</p>
+                        <div class="publication-links">
+                            <a href="https://www.biorxiv.org/content/10.1101/2024.11.08.622579v2.full.pdf">Paper</a>
+                            <a href="https://github.com/jozhang97/ism">Code</a>
+                            <a href="https://huggingface.co/jozhang97/ism_t33_650M_uc30pdb">Weights</a>
+                            <a href="./files/ism_poster.pdf">Poster</a>
+                        </div>
+                    </div>
+                </article>
 
-                <tr>
-                    <td width="30%" align="left">
-                        <center>
-                            <img width="200" align="center" src="./assets/pearl.png" border="0"/>
-                        </center>
-                    </td>
-                    </td>
-                    <td>
-                        <span style="font-size: 12pt;">
-                            <b> Pearl: A Foundation Model for Placing Every Atom in the Right Location </b> <br>
-                        </span>
-                        <span style="font-size: 10pt;">
-                          Genesis Research: <i>Jeffrey Ouyang-Zhang, contributor </i> <br>
-                          [<a href='https://arxiv.org/abs/2510.24670'>Paper</a>]
-                        </span>
-                    </td>
-                </tr>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="./assets/mutate_everything.jpeg" alt="Mutate Everything">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Predicting a Protein's Stability under a Million Mutations</h3>
+                        <p class="publication-authors"><span class="me">Jeffrey Ouyang-Zhang</span>, Daniel J Diaz, Adam R Klivans, Philipp Krähenbühl</p>
+                        <p class="publication-venue">NeurIPS 2023</p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/pdf/2310.12979.pdf">Paper</a>
+                            <a href="https://github.com/jozhang97/MutateEverything">Code</a>
+                            <a href="./files/mutate_everything_poster.pdf">Poster</a>
+                        </div>
+                    </div>
+                </article>
 
-                <tr>
-                    <td width="30%" align="left">
-                        <center>
-                            <img width="200" align="center" src="./assets/pairmixer.png" border="0"/>
-                        </center>
-                    </td>
-                    </td>
-                    <td>
-                        <span style="font-size: 12pt;">
-                            <b> Triangle Multiplication is All You Need for Biomolecular Structure Representations </b> <br>
-                        </span>
-                        <span style="font-size: 10pt;">
-                          <i>Jeffrey Ouyang-Zhang</i>,  Pranav Murugan, Daniel Jesus Diaz, Gianluca Scarpellini, Richard Strong Bowen, Nate Gruver, Adam Klivans, Philipp Kraehenbuehl, Aleksandra Faust, Maruan Al-Shedivat <br>
-                          ICLR 2026
-                          [<a href='https://arxiv.org/abs/2510.18870'>Paper</a>]
-                          [<a href='https://github.com/genesistherapeutics/pairmixer'>Code</a>]
-                          [<a href='https://huggingface.co/genesisml/pairmixer'>Weights</a>]
-                          [<a href='./files/pairmixer_poster.pdf'>Poster</a>]
-                        </span>
-                    </td>
-                </tr>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="./assets/stability_oracle.png" alt="Stability Oracle">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Stability Oracle: A Structure-Based Graph-Transformer for Identifying Stabilizing Mutations</h3>
+                        <p class="publication-authors">Daniel J Diaz, Chengyue Gong, <span class="me">Jeffrey Ouyang-Zhang</span>, James M Loy, Jordan Wells, David Yang, Andrew D Ellington, Alex Dimakis, Adam R Klivans</p>
+                        <p class="publication-venue">Nature Communications 2024</p>
+                        <div class="publication-links">
+                            <a href="https://www.biorxiv.org/content/biorxiv/early/2023/05/22/2023.05.15.540857.full.pdf">Paper</a>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="publication">
+                    <div class="publication-image dual">
+                        <img src="./assets/nms_pull.jpeg" alt="NMS Strikes Back">
+                        <img src="./assets/nms_hung.jpeg" alt="NMS Strikes Back">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">NMS Strikes Back</h3>
+                        <p class="publication-authors"><span class="me">Jeffrey Ouyang-Zhang</span>, Jang Hyun Cho, Xingyi Zhou, Philipp Krähenbühl</p>
+                        <p class="publication-venue">ArXiv 2022</p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/pdf/2212.06137.pdf">Paper</a>
+                            <a href="https://github.com/jozhang97/DETA">Code</a>
+                        </div>
+                    </div>
+                </article>
 
-                <tr>
-                    <td width="30%" align="left">
-                        <center>
-                            <img width="200" align="center" src="./assets/ambient.png" border="0"/>
-                        </center>
-                    </td>
-                    </td>
-                    <td>
-                        <span style="font-size: 12pt;">
-                            <b> Ambient Proteins: Training Diffusion Models on Low Quality Structures </b> <br>
-                        </span>
-                        <span style="font-size: 10pt;">
-                            Giannis Daras*, <i>Jeffrey Ouyang-Zhang</i>*, Krithika Ravishankar, William Daspit, Costis Daskalakis, Qiang Liu, Adam Klivans, Daniel J. Diaz <br>
-                            NeurIPS 2025 (Spotlight)
-                            [<a href='https://www.biorxiv.org/content/10.1101/2025.07.03.663105v1'>Paper</a>]
-                            [<a href='https://github.com/jozhang97/ambient-proteins'>Code</a>]
-                            [<a href='https://huggingface.co/jozhang97/ambient-long'>Weights</a>]
-                            [<a href='./files/ambient_poster.pdf'>Poster</a>]
-                        </span>
-                    </td>
-                </tr>
+                <article class="publication">
+                    <div class="publication-image dual">
+                        <img src="./assets/sidetuning_pull.png" alt="Side-Tuning">
+                        <img src="./assets/sidetuning_space.png" alt="Side-Tuning">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Side-Tuning: A Baseline for Network Adaptation via Additive Side Networks</h3>
+                        <p class="publication-authors"><span class="me">Jeffrey O. Zhang</span>, Alexander Sax, Amir Zamir, Leonidas Guibas, Jitendra Malik</p>
+                        <p class="publication-venue">ECCV 2020 (Spotlight)</p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/pdf/1912.13503.pdf">Paper</a>
+                            <a href="http://sidetuning.berkeley.edu">Website</a>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="publication">
+                    <div class="publication-image dual">
+                        <img src="./assets/midlevel_pull.png" alt="Mid-Level Visual Priors">
+                        <img src="./assets/midlevel_space.png" alt="Mid-Level Visual Priors">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Learning to Navigate Using Mid-Level Visual Priors</h3>
+                        <p class="publication-authors">Alexander Sax, <span class="me">Jeffrey O. Zhang</span>, Bradley Emi, Amir Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik</p>
+                        <p class="publication-venue">CoRL 2019 (Winner of CVPR 2019 Habitat Challenge)</p>
+                        <div class="publication-links">
+                            <a href="http://perceptual.actor/assets/CoRL19_Mid_Level_Main.pdf">Paper</a>
+                            <a href="http://perceptual.actor">Website</a>
+                            <a href="./files/CVPR19_midlevel_habitat_poster.pdf">Workshop Poster</a>
+                        </div>
+                    </div>
+                </article>
 
-                <tr>
-                    <td width="30%" align="left">
-                        <center>
-                            <img width="200" align="center" src="./assets/ism.png" border="0"/>
-                        </center>
-                    </td>
-                    </td>
-                    <td>
-                        <span style="font-size: 12pt;">
-                            <b> Distilling Structural Representations into Protein Sequence Models </b> <br>
-                        </span>
-                        <span style="font-size: 10pt;">
-                            <i> Jeffrey Ouyang-Zhang</i>, Chengyue Gong, Yue Zhao, Philipp Kr&auml;henb&uuml;hl, Adam R Klivans, Daniel J Diaz <br>
-                            ICLR 2025
-                            [<a href='https://www.biorxiv.org/content/10.1101/2024.11.08.622579v2.full.pdf'>Paper</a>]
-                            [<a href='https://github.com/jozhang97/ism'>Code</a>]
-                            [<a href='https://huggingface.co/jozhang97/ism_t33_650M_uc30pdb'>Weights</a>]
-                            [<a href='./files/ism_poster.pdf'>Poster</a>]
-                        </span>
-                    </td>
-                </tr>
+                <article class="publication">
+                    <div class="publication-image dual">
+                        <img src="./assets/sc2_pull.png" alt="StarCraft II">
+                        <img src="./assets/sc2_matrix.png" alt="StarCraft II">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Modular Architecture for StarCraft II with Deep Reinforcement Learning</h3>
+                        <p class="publication-authors">Dennis Lee*, Haoran Tang*, <span class="me">Jeffrey O. Zhang</span>, Huazhe Xu, Trevor Darrell, Pieter Abbeel</p>
+                        <p class="publication-venue">AIIDE 2018</p>
+                        <div class="publication-links">
+                            <a href="https://www.aaai.org/ocs/index.php/AIIDE/AIIDE18/paper/viewPaper/18084">Paper</a>
+                            <a href="https://sites.google.com/view/modular-sc2-deeprl">Website</a>
+                        </div>
+                    </div>
+                </article>
 
-                <tr>
-                    <td width="30%" align="left">
-                        <center>
-                            <img width="200" align="center" src="./assets/mutate_everything.jpeg" border="0"/>
-                        </center>
-                    </td>
-                    </td>
-                    <td>
-                        <span style="font-size: 12pt;">
-                            <b> Predicting a Protein's Stability under a Million Mutations </b> <br>
-                        </span>
-                        <span style="font-size: 10pt;">
-                            <i> Jeffrey Ouyang-Zhang</i>, Daniel J Diaz, Adam R Klivans, Philipp Kr&auml;henb&uuml;hl <br>
-                            NeurIPS 2023
-                            [<a href='https://arxiv.org/pdf/2310.12979.pdf'>Paper</a>]
-                            [<a href='https://github.com/jozhang97/MutateEverything'>Code</a>]
-                            [<a href='./files/mutate_everything_poster.pdf'>Poster</a>]
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td width="30%" align="left">
-                        <center>
-                            <img width="200" align="center" src="./assets/stability_oracle.png" border="0"/>
-                        </center>
-                    </td>
-                    <td>
-                        <span style="font-size: 12pt;">
-                            <b> Stability Oracle: A Structure-Based Graph-Transformer for Identifying Stabilizing Mutations </b> <br>
-                        </span>
-                        <span style="font-size: 10pt;">
-                            Daniel J Diaz, Chengyue Gong, <i> Jeffrey Ouyang-Zhang </i>, James M Loy, Jordan Wells, David Yang, Andrew D Ellington, Alex Dimakis, Adam R Klivans <br>
-                            Nature Communications 2024
-                            [<a href='https://www.biorxiv.org/content/biorxiv/early/2023/05/22/2023.05.15.540857.full.pdf'>Paper</a>]
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td width="30%" align="left">
-                        <center>
-                            <img width="100" align="center" src="./assets/nms_pull.jpeg" border="0"/>
-                            <img width="100" align="center" src="./assets/nms_hung.jpeg" border="0"/>
-                        </center>
-                    </td>
-                    <td>
-                        <span style="font-size: 12pt;">
-                            <b> NMS Strikes Back </b> <br>
-                        </span>
-                        <span style="font-size: 10pt;">
-                            <i> Jeffrey Ouyang-Zhang</i>, Jang Hyun Cho, Xingyi Zhou, Philipp Kr&auml;henb&uuml;hl <br>
-                            ArXiv 2022
-                            [<a href='https://arxiv.org/pdf/2212.06137.pdf'>Paper</a>]
-                            [<a href='https://github.com/jozhang97/DETA'>Code</a>]
-                        </span>
-                    </td>
-                </tr>
-
-
-
-                <tr> 
-                    <td width="30%" align="left"> 
-                        <center> 
-                            <img width="100" align="center" src="./assets/sidetuning_pull.png" border="0"/>
-                            <img width="100" align="center" src="./assets/sidetuning_space.png" border="0"/>
-                        </center> 
-                    </td>
-                    <td> 
-                        <span style="font-size: 12pt;">
-                            <b> Side-Tuning: A Baseline for Network Adaptation via Additive Side Networks </b> <br>
-                        </span> 
-                        <span style="font-size: 10pt;">
-                            <i> Jeffrey O. Zhang</i>, Alexander Sax, Amir Zamir, Leonidas Guibas, Jitendra Malik <br>
-                            ECCV 2020 (Spotlight)
-                            [<a href='https://arxiv.org/pdf/1912.13503.pdf'>Paper</a>]
-                            [<a href='http://sidetuning.berkeley.edu'>Website</a>]
-                        </span> 
-                    </td>
-                </tr>
-
-
-
-                <tr> 
-                    <td width="30%" align="left"> 
-                        <center> 
-                            <img width="100" align="center" src="./assets/midlevel_pull.png" border="0"/>
-                            <img width="100" align="center" src="./assets/midlevel_space.png" border="0"/>
-                        </center> 
-                    </td>
-                    <td> 
-                        <span style="font-size: 12pt;">
-                            <b> Learning to Navigate Using Mid-Level Visual Priors </b> <br>
-                        </span> 
-                        <span style="font-size: 10pt;">
-                            Alexander Sax, <i> Jeffrey O. Zhang</i>, Bradley Emi, Amir Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik <br>
-                            CoRL 2019 (Winner of CVPR 2019 Habitat Challenge)
-                            [<a href='http://perceptual.actor/assets/CoRL19_Mid_Level_Main.pdf'>Paper</a>]
-                            [<a href='http://perceptual.actor'>Website</a>]
-                            [<a href='./files/CVPR19_midlevel_habitat_poster.pdf'>Workshop Poster</a>]
-                        </span> 
-                    </td>
-                </tr>
-
-                <tr> 
-                    <td width="30%" align="left"> 
-                        <center> 
-                            <img width="100" align="center" src="./assets/sc2_pull.png" border="0"/>
-                            <img width="100" align="center" src="./assets/sc2_matrix.png" border="0"/>
-                        </center> 
-                    </td>
-                    <td> 
-                        <span style="font-size: 12pt;">
-                            <b> Modular Architecture for StarCraft II with Deep Reinforcement Learning </b> <br>
-                        </span> 
-                        <span style="font-size: 10pt;">
-                            Dennis Lee*, Haoran Tang*, <i> Jeffrey O. Zhang </i>, Huazhe Xu, Trevor Darrell, Pieter Abbeel <br>
-                            AIIDE 2018
-                            [<a href='https://www.aaai.org/ocs/index.php/AIIDE/AIIDE18/paper/viewPaper/18084'>Paper</a>]
-                            [<a href='https://sites.google.com/view/modular-sc2-deeprl'>Website</a>]
-                        </span> 
-                    </td>
-                </tr>
-                    
-
-            </tbody>
-        </table>
-    </font>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
